@@ -48,6 +48,7 @@ gem 'carrierwave', '~> 2.0'
 
 group :development, :test do
  gem 'sqlite3', '~> 1.3.6'
+ gem 'capybara'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end
