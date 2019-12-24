@@ -39,6 +39,8 @@ gem 'simple_form'
 gem 'popper_js', '~> 1.11', '>= 1.11.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 gem 'nested_form_fields'
+
+gem 'carrierwave', '~> 2.0'
 #gem 'font-awesome-rails'
 
 # Use Capistrano for deployment
