@@ -1,0 +1,21 @@
+<div id="myApp">
+  Switch's original price {{price}}, with tax is {{priceInTax}}, transfer to rmb: {{priceChinaRMB}}
+  
+</div>
+
+<script>
+  var myApp = new Vue({
+    el: '#myApp',
+    data: {
+      price: 29980
+    },
+    computed: {
+      priceInTax: function(){
+        return this.price * 1.08;
+      },
+      priceChinaRMB: function(){
+        return Math.round(this.priceInTax / 16.75 );
+      },
+    },
+  });
+</script>

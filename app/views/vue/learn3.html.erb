@@ -1,0 +1,26 @@
+<h1> learn 3</h1>
+
+<div id="myApp">
+  <ol>
+    <game-item v-for="item in games" v-bind:game="item"></game-item>
+  </ol>
+</div>
+
+<script>
+/* 组件定义：game-item */
+Vue.component('game-item', {
+  props: ['game'],
+  template: '<li>{{ game.title }}</li>'
+});
+/* Vue对象实例化 */
+var myApp = new Vue({
+  el: '#myApp',
+  data: {
+    games: [
+      { title: '斗地主' },
+      { title: '打麻雀' },
+      { title: 'UNO' }
+    ]
+  }
+});
+</script>

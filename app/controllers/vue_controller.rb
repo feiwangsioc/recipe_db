@@ -9,4 +9,25 @@ class VueController < ApplicationController
     
   end 
   
+  def learn3
+  end 
+  
+  def learn7
+  end 
+  
+  def learn8
+  end 
+  
+  def learn9
+  end 
+  
+  def learn10
+  end
+
+  def learn11
+  end
+
+  def learn12
+  end
+  
 end
