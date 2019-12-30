@@ -1,0 +1,29 @@
+    <div id="myApp">
+      <!--{{ message }}-->
+      <div v-if="seen"> 2019 new games</div>
+      <ol>
+        <li v-for="game in games">
+          {{ game.title }} / {{game.price }} USD
+        </li>
+      </ol>
+    </div>
+    
+    
+   
+   
+   
+    <script>
+      var myApp = new Vue({
+        el: '#myApp',
+        data: {
+          // message: 'Hello Vue.js'
+          seen: true,
+          games: [
+              { title: "tank", price: 400 },
+              { title: "mary", price: 300 },
+              { title: "rockets", price: 800 },     
+            
+            ],
+        },
+      });
+    </script>

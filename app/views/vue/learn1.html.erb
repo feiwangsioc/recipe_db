@@ -1,0 +1,17 @@
+
+<div id="myApp">
+  <p>
+    your favorite game: {{ mygame }}
+  </p>
+  
+    <input v-model="mygame">
+</div>
+
+<script>
+  var myApp = new Vue({
+    el: '#myApp',
+    data: {
+      mygame: "hero"
+    },
+  });
+</script>
