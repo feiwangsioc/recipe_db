@@ -11,7 +11,10 @@ Rails.application.routes.draw do
   get 'vue/learn10'
   get 'vue/learn11'
   get 'vue/learn12'
-  
+  get 'vue/learn13'
+  get 'vue/learn14'
+  get 'vue/learn15'
+  get 'vue/learn16'
   get 'pages/about'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

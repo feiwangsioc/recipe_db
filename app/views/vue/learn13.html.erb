@@ -1,0 +1,22 @@
+<div id="myApp">
+  <h1 v-if="result == 0"> unpublish</h1>
+  <h1 v-else-if="result < 60 ">{{ result }} - unpass</h1>
+  <h1 v-else-if="result < 80 ">{{ result }} - need hard work</h1>
+  <h1 v-else>{{ result }} well done</h1>
+  <button @click="btnClick"> scores </button>
+</div>
+
+<script>
+  
+  var myApp = new Vue({
+    el: '#myApp',
+    data: {
+      result: 0
+    },
+    methods: {
+      btnClick: function(){
+        this.result = Math.round(Math.random() * 100);
+      },
+    },
+  });
+</script>

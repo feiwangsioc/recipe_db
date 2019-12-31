@@ -1,0 +1,22 @@
+
+<div id="myApp">
+  <div v-bind:class="{active:isActive}">red book No1</div>
+  <div :class="{active:isActive}">red book No2</div>
+  <button @click="btnClick"> change class</button>
+</div>
+
+
+<script>
+  var myApp = new Vue({
+    el: '#myApp',
+    data: {
+      isActive: true,
+    },
+    methods: {
+      btnClick: function(){
+        this.isActive = !this.isActive;
+      },
+    },
+  });
+</script>
+
