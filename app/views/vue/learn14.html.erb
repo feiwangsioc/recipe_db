@@ -1,0 +1,20 @@
+<div id="myApp">
+  <h1 v-show="result"> Switch</h1>
+  <button @click="btnClick"> scores </button>
+</div>
+
+
+<script>
+  
+  var myApp = new Vue({
+    el: '#myApp',
+    data: {
+      result: true
+    },
+    methods: {
+      btnClick: function(){
+        this.result = !this.result;
+      },
+    },
+  });
+</script>
