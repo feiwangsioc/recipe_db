@@ -41,5 +41,17 @@ class VueController < ApplicationController
 
   def learn16
   end
+  
+  def learn17
+  end
 
+  def learn18
+  end
+
+  def learn19
+  end
+  
+  def learn20
+  end
+  
 end

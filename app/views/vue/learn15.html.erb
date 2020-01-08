@@ -1,0 +1,20 @@
+<div id="myApp">
+  <ul>
+    <li v-for="(game, index) in games">({{index+1}}) {{game.title}} / price: {{game.price}} USD</li>
+  </ul>
+</div>
+
+<script>
+  var myApp = new Vue({
+    el: '#myApp',
+    data: {
+      games: [
+        {title: "jjbb", price:500},
+        {title: "oobb", price:600},
+        {title: "ffff", price:600},
+      ]
+    },
+  });
+  
+  
+</script>

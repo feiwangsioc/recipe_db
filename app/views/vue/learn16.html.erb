@@ -1,0 +1,23 @@
+<div id="myApp">
+  <h1> JS object </h1>
+  <div v-for="(value, key) in mygame">
+         {{ key }} : {{ value }}
+  </div>
+</div>
+
+<script>
+  var myApp = new Vue({
+    el: '#myApp',
+    data: {
+      mygame: {
+        title: "fuck",
+        price: 223,
+        publishdate: "2018",
+        category: "shooting",
+        agerange: "all"
+        
+      },
+      
+    },
+  });
+</script>
