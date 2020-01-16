@@ -1,6 +1,7 @@
 <div id="myApp">
   <p> {{ message }} </p>
   <p>{{ message | toupper }}</p>
+  <p>{{ message | tolower }}</p>
   <hr>
   <p> progess vue.js: {{num}}({{num | topercentage}})</p>
 </div>
@@ -9,12 +10,15 @@
   var myApp = new Vue({
     el: '#myApp',
     data: {
-      message: 'hello vue.js world',
+      message: 'Hello vue.js World',
       num: 0.3
     },
     filters: {
       toupper: function(value){
         return value.toUpperCase();
+      },
+      tolower: function(value){
+        return value.toLowerCase();
       },
       topercentage: function(value){
          return value * 100 + '%';
